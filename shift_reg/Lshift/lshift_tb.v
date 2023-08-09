@@ -9,8 +9,9 @@ module leftshiftreg_tb;
     always #5 clk = ~clk;
 
     initial begin
-        clk = 0;
+        clk = 1;
         rst = 1;
+        in_tb =1;
         #10;
         rst = 0;
         in_tb = 1'b 1;
